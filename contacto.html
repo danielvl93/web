@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+    <!--Metadatos-->
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="name" content="Contacto">
+        <meta name="description" content="La págima que voy a utilizar como página de contacto.">
+        <meta name="author" content="Daniel VL">
+
+        <title>Contacto</title>
+        <link rel="icon" href="isotipo_ajna.svg">
+        <link rel="stylesheet" href="estilos/estilos.css">
+    </head>
+
+    <!--Contenido-->
+    <body>
+        <!--Barra de navegación-->
+        <nav>
+            <a class="logo" href="index.html">
+                <img src="images/isotipo_inicio.svg" alt="Isotipo de la marca Ajna">
+            </a>
+            <ul>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a class="pag_actual" href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+        
+        <!--Cabecera-->
+        <header id="cab-contacto">
+        <h1>Contacto</h1>
+        </header>
+
+        <!--Contenido-->
+        <main>
+
+            <section class="sec-texto">
+            
+                <div class="titulo">
+                <h2>Contacta con nosotros</h2>
+                <hr>
+                </div>
+
+                <p class="subtitulo">Si tienes alguna duda, sugerencia o consulta estaremos encantados de atenderte. Escríbenos o rellena el formulario que encontrarás más abajo y te contestaremos en el menor tiempo posible.</p>
+
+                    <article id="form-contacto">
+                        <img src="images/contacto.webp" alt="rama con hojas">
+                        <form action="gracias.html" method="get">
+                            <label>
+                                <input placeholder="Nombre" class="form-texto" type="text" name="nombre" required>
+                            </label>
+                            <br><br>
+                
+                            <label>
+                                <input placeholder="Email" class="form-texto" type="email" name="correo" required>
+                            </label>
+                            <br><br> <!--Esta etiqueta me permite forzar un salto de línea.-->
+
+                            <label>
+                                <input placeholder="Móvil (opcional)" class="form-texto" type="text" name="móvil">
+                            </label>
+                            <br><br>
+
+                            <label>
+                                <textarea placeholder="Mensaje" class="form-texto" name="Mensaje" cols="30" rows="10"></textarea>
+                            </label>
+                
+                            <div class="boton-privacidad">
+                            <label>
+                                <input class="caja-tick" type="checkbox" name="privacidad" required>
+                                 He leído y acepto la <a href="privacidad.html" target="_blank">política de privacidad</a>*
+                            </label>
+                
+                            <input class="btn-mandar" type="submit" value="Enviar formulario">
+                            </div>
+                        </form>
+                    </article>
+
+                    <article id="form-suscribir">
+                        <div class="text-nosotros">
+                            <h2>Suscríbete</h2>
+                            <p>¿Quieres recibir nuestra Newsletter?</p>
+                            <p>Recibirás de forma semanal consejos y trucos de aromaterapia que te ayudarán en tu día a día.</p>
+                        </div>
+                        <br><br>
+                        <form action="gracias.html" method="get">
+                            <label>
+                                <input placeholder="Email" class="form-texto" type="email" name="correo" required>
+                            </label>
+                            <br><br> <!--Esta etiqueta me permite forzar un salto de línea.-->
+                            <div class="boton-privacidad">
+                                <label>
+                                    <input class="caja-tick" type="checkbox" name="privacidad" required>
+                                     He leído y acepto la <a href="privacidad.html" target="_blank">política de privacidad</a>*
+                                </label>
+                                <input class="btn-mandar" type="submit" value="Suscribirme">
+                            </div>
+                        </form>
+
+                    </article>
+            </section>
+            
+            <section class="redes-sociales">
+                <h3>También puedes encontrarnos en</h3>
+                <div>
+                    <a href="https://www.instagram.com/ajnaaromaterapia/"><img src="images/instagram.svg" alt="icono instagram"></a>
+                    <img src="images/facebook.svg" alt="icono facebook">
+                    <img src="images/twitter.svg" alt="icono twitter">
+                </div>
+            </section>
+        </main>
+
+        <!--Pie de página-->
+        <footer>
+            <p>Copyright 2024 &copy; Ajna | Desarrollado por Daniel VL</p>
+            <div>
+                <p><a href="privacidad.html">Política de privacidad</a></p>
+                <p>Aviso legal</p>
+                <p><a href="cookies.html">Política de cookies</a></p>
+            </div>
+        </footer>
+    </body>
+</html>

@@ -206,7 +206,7 @@ main {
     display: flex;
     flex-direction: column;
     width: 30%;
-    height: 75vh;
+    min-height: 75vh;
     box-shadow: 2px 2px 15px 1px rgba(0, 0, 0, 0.20);
     margin: auto;
     margin-bottom: 50px;
@@ -334,6 +334,7 @@ main {
 
     img {
         width: 46vw;
+        height: auto;
     }
 
     a {
@@ -595,7 +596,7 @@ main {
 footer {
     color: var(--color-texto);
     background-color: var(--color-acento);
-    height: 5vh;
+    min-height: 5vh;
     
     display: flex;
     align-items: center;
@@ -666,13 +667,142 @@ footer {
     }
 
     main {
-        width: 94vw;
-        margin: 10px auto;
-    }
+        width: 100%;
+        margin: auto;
 
-    .columna {
-        flex-direction: column;
-    }
+        .titulo {
+            text-align: center;
+            margin: 25px;
+        }
+    
+        .subtitulo {
+            font-size: 1.2rem;
+            margin: auto;
+            width: 90%;
+            margin-bottom: 25px;
+            text-align: center;
+            text-wrap: balance;
+        }
+
+        p {
+            text-align: left;
+        }
+
+        .sec-blog {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        
+        .art-blog {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            min-height: 50vh;
+            margin-bottom: 10px;
+        }
+
+        .text-blog {
+            margin: auto;
+            hr {
+                margin-bottom: 25px;
+            }
+
+            p {
+                text-align: center;
+            }
+        }        
+
+        .art-nosotros {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 50vh;
+            margin: 25px auto;
+                
+            img {
+                width: 92vw;
+            }
+        }
+
+        .text-nosotros {
+            margin: auto;
+        
+            hr {
+                margin-bottom: 25px;
+            }
+        }
+
+        #art-ajna {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 30vh;
+        }
+
+        #art-objetivo {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 50vh;
+            margin: 25px auto;
+                
+            img {
+                width: 92vw;
+            }
+        }
+
+        #form-contacto {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 30vh;
+            width: 80%;
+
+            form {
+                margin: 25px auto;
+                align-items: center;
+            }
+
+            img {
+                width: 80vw;
+            }
+        }
+        
+        .form-texto {
+            width: 70vw;
+        }
+
+        .boton-privacidad {
+            flex-direction: column;
+            gap: 10px;
+            margin: 10px auto;
+        }
+
+        #form-suscribir {
+
+            margin: 25px auto;
+
+            p {
+                text-align: center;
+            }
+        }
+
+        .priv-titular {
+            p {
+                padding: 0px;
+            }
+        }
+
+        .priv-intro {
+            padding: 0px;
+        }
+        
+
+        .columna {
+            flex-direction: column;
+        }
+    }   
 
     footer {
         flex-direction: column;
@@ -681,7 +811,5 @@ footer {
             gap: 0;
             text-align: center;
         }
-    }
-
-
+    } 
 }
